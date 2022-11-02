@@ -1,42 +1,123 @@
-/* Feuille de styles CSS */
-table, th, td {
-
-    border: 2px solid black
-    
-    }
-
-html { scroll-behavior: smooth; }
+html {
+	scroll-behavior: smooth;
+}
 
 #container {
-    background-color:white;
-    width: 600px;
-    margin: 32px auto;
-    padding: 1.5rem;
+	background-color:white;
+	width: 600px;
+	margin: 32px auto;
+	margin-top:auto;
+	padding: 1.5rem;
 }
 
 body {
-    background: #eeeeee;
-    background-repeat:no-repeat;
-    font-family: sans-serif;
+	background: #eeeeee;
+	background-repeat:no-repeat;
+	font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
-H1 { text-align: center }
+H1 {
+	text-align: center;
+	font-size: 45px; 
+}
 
 p {
-    margin: 0.5rem 0px;
-    text-align: justify;
-    line-height: 1.2rem;
+	margin: 1rem 0px;
+	text-align: justify;
+	line-height: 1.4rem;
+	font-size: 16.2px;
 }
 
 textarea {
-    height: 200px;
+	height: 200px;
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto }
+	display: block;
+	margin-left: auto;
+	margin-right: auto }
 
-p {
-    font-size: 16px;
+table {
+	border:3px solid black;
+	border-collapse:collapse;
+	width: 86%;
 }
+
+thead, tfoot {
+	background-color:black;
+	border:1px solid black;
+}
+
+tbody {
+	background-color:#FFFFFF;
+	border:3px solid black;
+}
+
+th {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+	border:1px solid black;
+	padding:5px;
+	background-color:#FFFFFF;
+	width:35%;
+}
+
+td {
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size:100%;
+	border:1px solid black;
+	padding:8px;
+	text-align:center;
+}
+
+caption {
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+	text-decoration:none;
+	color: #007bff;
+}
+
+#text-image {
+	text-align:center;
+}
+
+#source {
+	text-align: right;
+	font-style: italic;
+	font-size: 13px;
+}
+
+li {
+    list-style-type: disc;
+	line-height: 1.4rem;
+	
+}
+
+#spec {
+	font-size: 15.8px;
+	text-align: left;
+}
+
+i {
+	color:#007bff;
+}
+
+hr{
+	height: 2px;
+	background-color: #000000;
+	border: none;
+}
+
+.contact_form input, .contact_form textarea { 
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+}
+.contact_form input:focus, .contact_form textarea:focus {
+    background: #fff; 
+    border:1px solid #555; 
+    box-shadow: 0 0 3px #aaa; 
+}
+
+

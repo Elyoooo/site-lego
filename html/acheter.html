@@ -1,42 +1,70 @@
 <!DOCTYPE html>
-<html>
-    <!DOCTYPE html>
-    <html lang="fr">
-        <head>
-            <meta charset="UTF-8">
-            <title>LEGO Webstore</title>
-            <link rel="stylesheet" href="./style.css">
-        </head>
-        <header>
-            <section>
-                <H1>LEGO WebStore</H1>
-                
-            </section>
-        </header>
-LEGO WebStore
-
-Produit
-Acheter
-
-Acheter des LEGO
-
-Remplissez le formulaire ci-dessous pour commander des LEGO !
-
-Informations personnelles
-Civilité: M. Mme.
-Nom:
-Prénom:
-Mail:
-
-Informations de livraison
-Quantité commandée: 1 boîte 2 boîtes 3 boîtes 4 boîtes 5 boîtes
-Adresse de livraison:
-
-Confirmation
-J'ai relu ma commande et certifie que ces informations sont correctes.
-
-Retour en haut de page
-TP1 : Découverte de HTML et CSS
-L2 Développement Web - 2018
-
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>LEGO Webstore | Acheter</title>
+		<link rel="icon" href="../img/favicon.ico">
+		<link rel="stylesheet" href="../css/styles.css">
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<H1>LEGO WebStore</H1>
+			</header>
+			<hr>
+			<ul>
+				<li><b><a href="produit.html" target="_blank">Produit</a></b> </li>
+				<li><b><a href="acheter.html">Acheter</a></b> </li>
+			</ul>
+			<hr>
+			<H2>Acheter des LEGO</H2>
+			<p>Remplissez le formulaire ci-dessous pour commander des <i>LEGO</i> !</p>
+			<H3>Informations personnelles</H3>
+			<form method="post" action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ECJYWRGV22GQ8" enctype="multipart/form-data">
+				<label>Civilité :</label>
+				<p><input type="radio" name="civilite" value="m" required>M.
+				<input type="radio" name="civilite" value="f" required>Mme.
+				</p>
+				<label for="nom">Nom:</label><br>
+				<input type="text" id="nom" name="nom" required>
+				<br>
+				<br>
+				<label for="prenom">Prénom:</label><br>
+				<input type="text" id="prenom" name="prenom" required>
+				<br>
+				<br>
+				<label for="email">Mail:</label><br>
+				<input type="email" id="email" name="email" required>
+				<h3>Informations de livraison</h3>
+				<label for="Pays">Quantité commandée:</label>
+				<br>
+				<br>
+				<select id="Pays" name="pays">
+					<optgroup label="Europe">
+						<option>1 boîte</option>
+						<option>2 boîtes</option>
+						<option>3 boîtes</option>
+						<option>4 boîtes</option>
+						<option>5 boîtes</option>
+						<option>6 boîtes</option>
+						<option>7 boîtes</option>
+						<option>8 boîtes</option>
+						<option>9 boîtes</option>
+						<option>10 boîtes</option>
+					</optgroup>
+				</select>
+				<br>
+				<H3>Confirmation</H3>
+				<input type="checkbox" name="conditions" value="ok" required>J'ai relu ma commande et certifie que ces informations sont corrects.
+				<br>
+				<br>
+				<input type="submit" value="Confirmer la commande" id="submit">
+			</form>
+			<hr>
+			<a href="#" class="btn btn-default"><b>Retour en haut de page</b></a>
+			<p>Auteur: Evann PARISY</p>
+			<p>IPSSI | Développement Web | 2022 - 2023</p>
+			<p class="copyright">Copyright © 2022 Copyright Holer All Rights Reserved.</p>
+		</div>
+	</body>
 </html>
