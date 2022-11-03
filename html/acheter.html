@@ -15,6 +15,7 @@
 			<ul>
 				<li><b><a href="produit.html" target="_blank">Produit</a></b> </li>
 				<li><b><a href="acheter.html">Acheter</a></b> </li>
+                <li><b><a href="contact.html" target="_blank">Contact</a></b></li>
 			</ul>
 			<hr>
 			<H2>Acheter des LEGO</H2>
@@ -39,8 +40,8 @@
 				<label for="Pays">Quantité commandée:</label>
 				<br>
 				<br>
-				<select id="Pays" name="pays">
-					<optgroup label="Europe">
+				<select id="boite" name="boite">
+					<optgroup label="Quantité">
 						<option>1 boîte</option>
 						<option>2 boîtes</option>
 						<option>3 boîtes</option>
@@ -54,6 +55,10 @@
 					</optgroup>
 				</select>
 				<br>
+				<div>
+					<p>Adresse de livraison:</p>
+					<textarea name="adresse" required></textarea>			
+				</div>
 				<H3>Confirmation</H3>
 				<input type="checkbox" name="conditions" value="ok" required>J'ai relu ma commande et certifie que ces informations sont corrects.
 				<br>
